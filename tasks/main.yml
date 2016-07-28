@@ -5,6 +5,7 @@
     method=PUT
     HEADER_Content-Type="application/json"
     body='{{ marathon_app | to_json }}'
+    body_format=json
     status_code=200,201
   register: marathon_deployment
 
